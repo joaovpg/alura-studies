@@ -1,6 +1,7 @@
+import React from 'react';
 import Item from './Item';
-import style from './Lista.module.scss';
 import { ITarefa } from '../../types/tarefa';
+import style from './Lista.module.scss';
 
 function Lista({ tarefas }: { tarefas: ITarefa[] }) {
     return (
