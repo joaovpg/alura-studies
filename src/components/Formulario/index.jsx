@@ -29,14 +29,13 @@ class Formulario extends React.Component<{
             tarefa: "",
             tempo: "00:00"
         })
-        console.log(this.state);
     }
 
     render() {
         return (
             <form className={style.novaTarefa} onSubmit={this.adicionarTarefa.bind(this)}>
                 <div className={style.inputContainer}>
-                    <label htmlFor='tarefa'>
+                    <label htmlFor="tarefa">
                         Adicione um novo estudo
                     </label>
                     <input
@@ -45,12 +44,12 @@ class Formulario extends React.Component<{
                         id="tarefa"
                         value={this.state.tarefa}
                         onChange={evento => this.setState({ ...this.state, tarefa: evento.target.value })}
-                        placeholder="O que você quer estudar?"
+                        placeholder="O que você quer estudar"
                         required
                     />
                 </div>
                 <div className={style.inputContainer}>
-                    <label htmlFor='tempo'>
+                    <label htmlFor="tempo">
                         Tempo
                     </label>
                     <input
@@ -65,7 +64,9 @@ class Formulario extends React.Component<{
                         required
                     />
                 </div>
-                <Botao>Adicionar</Botao>
+                <Botao type="submit">
+                    Adicionar
+                </Botao>
             </form>
         )
     }

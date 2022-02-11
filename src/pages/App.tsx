@@ -5,7 +5,6 @@ import Lista from '../components/Lista';
 import { ITarefa } from '../types/tarefa';
 import style from './App.module.scss';
 
-
 function App() {
   const [tarefas, setTarefas] = useState<ITarefa[]>([]);
   return (
